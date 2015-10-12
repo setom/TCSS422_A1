@@ -9,19 +9,25 @@ typedef struct {
 typedef pcb * pcb_p; 
 
 
-typedef struct node {	
+typedef struct {	
 	pcb_p data;					//specific PCB of the node
 	struct node *next;			//next node in the queue
 } Node;
  
 typedef Node * node_p;
 
-typedef struct queue{
+typedef struct {
 	struct node *head;			//head of the queue
 	struct node *tail;			//tail of the queue
 } Queue;
 
+//declare method to create new PCB
+pcb* createPCB();
+//declare method to create new Node
+Node* createNode();
 // declare methods for the queue
+Queue* createQueue();
 Queue* peek();
 Queue* enqueue();
 Queue* dequeue();
+
