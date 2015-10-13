@@ -19,7 +19,7 @@ typedef struct Queue {
 } Queue;
 
 //declare method to create new PCB
-pcb* createPCB();
+pcb* createPCB(int, int, State);
 
 // declare methods for the queue
 Queue* createQueue();
