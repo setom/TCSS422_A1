@@ -37,7 +37,7 @@ Queue* createQueue() {
 
 //enqueue new item to the tail
 //dequeue items from the head
-void enqueue(Queue *myQ, pcb *myPcb){
+int enqueue(Queue *myQ, pcb *myPcb){
 	
 	//if the queue is null
 	if(myQ->head == NULL){
