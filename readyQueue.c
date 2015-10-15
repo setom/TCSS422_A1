@@ -54,7 +54,7 @@ Queue* enqueue(Queue *myQ, pcb *myPcb){
 	return 0;
 }
 
-pcb* dequeue(Queue *myQ){
+pcb dequeue(Queue *myQ){
 	
 	//TODO: **** Check for memory leaks later*****
 	
@@ -63,11 +63,11 @@ pcb* dequeue(Queue *myQ){
 	//make a holder for the head pcb
 	pcb myPcb = myQ->head;
 	//move the head to head.next
-	myQ->head = head->next;
+	myQ->head = myQ->head->next;
 	//decrement count
 	myQ->count--;
 	//return the pcb 
-	return myPcb;
+	return *myPcb;
 	
 }
 
