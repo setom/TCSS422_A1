@@ -50,9 +50,11 @@ Queue* enqueue(Queue *myQ, pcb *myPcb){
 	myQ->tail = myPcb;
 	//increment the count of nodes
 	myQ->count++;
+	
+	return 0;
 }
 
-pcb dequeue(Queue *myQ){
+pcb* dequeue(Queue *myQ){
 	
 	//TODO: **** Check for memory leaks later*****
 	
