@@ -29,8 +29,8 @@ pcb* createPCB(int, int, State);
 
 // method prototypes
 Queue* createQueue();
-Queue* peek(Queue *myQ);
-Queue* enqueue(Queue *myQ, pcb *myPcb);
-Queue* dequeue(Queue *myQ);
+pcb peek(Queue myQ);
+enqueue(Queue *myQ, pcb *myPcb);
+pcb dequeue(Queue *myQ);
 
 
